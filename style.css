@@ -10,6 +10,13 @@
   padding: 0;
 }
 
+button,
+button:focus,
+button:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* =========================
    Typography
 ========================= */
@@ -112,7 +119,7 @@ p {
 }
 
 .filters-row {
-  width: max-content;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -445,6 +452,15 @@ body.is-empty .empty-state {
 /* =========================
    Media Queries
 ========================= */
+
+@media (hover: none) {
+  .filter-toggle:hover,
+  .filter-tab:hover,
+  .filter-pill:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+}
 
 @media (max-width: 1068px) {
   .page-container {
