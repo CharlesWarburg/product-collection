@@ -99,7 +99,20 @@ p {
 }
 
 /* Filters */
+.filters-scroll {
+  overflow-x: auto;
+  margin-inline: -20px;
+  padding-inline: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.filters-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 .filters-row {
+  width: max-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -465,7 +478,7 @@ body.is-empty .empty-state {
   }
 
   .filter-panel {
-    margin-right: 20px;
+    margin: 0px 20px;
   }
 
   .product-grid {

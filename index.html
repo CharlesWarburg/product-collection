@@ -34,6 +34,7 @@
           <img
             src="https://images.unsplash.com/photo-1628795637863-450edbc12e4d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Party Collection product range"
+            loading="lazy"
           />
         </div>
 
@@ -50,137 +51,139 @@
       <!-- Filters -->
       <section class="filters">
         <div class="page-container">
-          <div class="filters-row">
-            <div class="filter-shell">
-              <div class="filter-bar">
-                <button type="button" class="filter-tab is-active" data-ca="all">
-                  All
-                </button>
-                <button type="button" class="filter-tab" data-ca="serum">
-                  Serums
-                </button>
-                <button type="button" class="filter-tab" data-ca="cream">
-                  Creams
-                </button>
-                <button type="button" class="filter-tab" data-ca="toner">
-                  Toners
-                </button>
-                <button type="button" class="filter-tab" data-ca="body">
-                  Body
-                </button>
-              </div>
-            </div>
-
-            <div class="filter-control">
+          <div class="filters-scroll">
+            <div class="filters-row">
               <div class="filter-shell">
                 <div class="filter-bar">
-                  <button class="filter-toggle">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                    >
-                      <path
-                        d="M7.27406 8.28281L0.500015 0.5H17.5L10.726 8.28281V14.8703L7.27406 17.5V8.28281Z"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                  <button type="button" class="filter-tab is-active" data-ca="all">
+                    All
+                  </button>
+                  <button type="button" class="filter-tab" data-ca="serum">
+                    Serums
+                  </button>
+                  <button type="button" class="filter-tab" data-ca="cream">
+                    Creams
+                  </button>
+                  <button type="button" class="filter-tab" data-ca="toner">
+                    Toners
+                  </button>
+                  <button type="button" class="filter-tab" data-ca="body">
+                    Body
                   </button>
                 </div>
               </div>
+
+              <div class="filter-control">
+                <div class="filter-shell">
+                  <div class="filter-bar">
+                    <button class="filter-toggle">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.27406 8.28281L0.500015 0.5H17.5L10.726 8.28281V14.8703L7.27406 17.5V8.28281Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="filter-panel">
+                <button class="filter-close" aria-label="Close filters">X</button>
+
+                <fieldset class="filter-group">
+                  <legend>Skin type</legend>
+
+                  <label class="filter-pill">
+                    <input type="checkbox" value="all" data-filter="skin" />
+                    All
+                  </label>
+
+                  <label class="filter-pill">
+                    <input type="checkbox" value="oily" data-filter="skin" />
+                    Oily
+                  </label>
+
+                  <label class="filter-pill">
+                    <input type="checkbox" value="sensitive" data-filter="skin" />
+                    Sensitive
+                  </label>
+
+                  <label class="filter-pill">
+                    <input type="checkbox" value="dry" data-filter="skin" />
+                    Dry
+                  </label>
+                </fieldset>
+
+                <fieldset class="filter-group">
+                  <legend>Skin concern</legend>
+
+                  <label class="filter-pill">
+                    <input
+                      type="checkbox"
+                      value="hydration"
+                      data-filter="concern"
+                    />
+                    Hydration
+                  </label>
+
+                  <label class="filter-pill">
+                    <input
+                      type="checkbox"
+                      value="oil-control"
+                      data-filter="concern"
+                    />
+                    Oil control
+                  </label>
+
+                  <label class="filter-pill">
+                    <input
+                      type="checkbox"
+                      value="anti-aging"
+                      data-filter="concern"
+                    />
+                    Anti-aging
+                  </label>
+
+                  <label class="filter-pill">
+                    <input
+                      type="checkbox"
+                      value="renewal"
+                      data-filter="concern"
+                    />
+                    Renewal
+                  </label>
+
+                  <label class="filter-pill">
+                    <input
+                      type="checkbox"
+                      value="brightening"
+                      data-filter="concern"
+                    />
+                    Brightening
+                  </label>
+
+                  <label class="filter-pill">
+                    <input
+                      type="checkbox"
+                      value="soothing"
+                      data-filter="concern"
+                    />
+                    Soothing
+                  </label>
+                </fieldset>
+
+                <button class="filter-clear">Clear filters</button>
+              </aside>
             </div>
-
-            <aside class="filter-panel">
-              <button class="filter-close" aria-label="Close filters">X</button>
-
-              <fieldset class="filter-group">
-                <legend>Skin type</legend>
-
-                <label class="filter-pill">
-                  <input type="checkbox" value="all" data-filter="skin" />
-                  All
-                </label>
-
-                <label class="filter-pill">
-                  <input type="checkbox" value="oily" data-filter="skin" />
-                  Oily
-                </label>
-
-                <label class="filter-pill">
-                  <input type="checkbox" value="sensitive" data-filter="skin" />
-                  Sensitive
-                </label>
-
-                <label class="filter-pill">
-                  <input type="checkbox" value="dry" data-filter="skin" />
-                  Dry
-                </label>
-              </fieldset>
-
-              <fieldset class="filter-group">
-                <legend>Skin concern</legend>
-
-                <label class="filter-pill">
-                  <input
-                    type="checkbox"
-                    value="hydration"
-                    data-filter="concern"
-                  />
-                  Hydration
-                </label>
-
-                <label class="filter-pill">
-                  <input
-                    type="checkbox"
-                    value="oil-control"
-                    data-filter="concern"
-                  />
-                  Oil control
-                </label>
-
-                <label class="filter-pill">
-                  <input
-                    type="checkbox"
-                    value="anti-aging"
-                    data-filter="concern"
-                  />
-                  Anti-aging
-                </label>
-
-                <label class="filter-pill">
-                  <input
-                    type="checkbox"
-                    value="renewal"
-                    data-filter="concern"
-                  />
-                  Renewal
-                </label>
-
-                <label class="filter-pill">
-                  <input
-                    type="checkbox"
-                    value="brightening"
-                    data-filter="concern"
-                  />
-                  Brightening
-                </label>
-
-                <label class="filter-pill">
-                  <input
-                    type="checkbox"
-                    value="soothing"
-                    data-filter="concern"
-                  />
-                  Soothing
-                </label>
-              </fieldset>
-
-              <button class="filter-clear">Clear filters</button>
-            </aside>
           </div>
         </div>
       </section>
@@ -206,6 +209,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005936/pexels-photo-7005936.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -231,6 +235,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005931/pexels-photo-7005931.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -256,6 +261,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005936/pexels-photo-7005936.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -281,6 +287,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005931/pexels-photo-7005931.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -324,6 +331,7 @@
                   <img
                     src="https://images.unsplash.com/photo-1675016331223-aa501c367d69?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
+                    loading="lazy"
                   />
                 </div>
               </article>
@@ -340,6 +348,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005936/pexels-photo-7005936.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -365,6 +374,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005931/pexels-photo-7005931.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -390,6 +400,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005936/pexels-photo-7005936.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -415,6 +426,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005931/pexels-photo-7005931.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -440,6 +452,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005936/pexels-photo-7005936.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -465,6 +478,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005931/pexels-photo-7005931.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -490,6 +504,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005936/pexels-photo-7005936.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
@@ -515,6 +530,7 @@
                 <img
                   src="https://images.pexels.com/photos/7005931/pexels-photo-7005931.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <button class="product-cta">+ ADD</button>
               </div>
