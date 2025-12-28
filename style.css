@@ -63,10 +63,6 @@ p {
   padding-inline: 32px;
 }
 
-.filters {
-  position: relative;
-}
-
 /* =========================
    Components
 ========================= */
@@ -106,6 +102,11 @@ p {
 }
 
 /* Filters */
+
+.filters {
+  position: relative;
+}
+
 .filters-scroll {
   overflow-x: auto;
   margin-inline: -20px;
@@ -346,6 +347,7 @@ p {
 }
 
 .promo-cta {
+  display: block;
   align-items: center;
   justify-items: center;
   width: 46px;
@@ -355,6 +357,7 @@ p {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  line-height: 0;
 }
 
 .promo-cta-arrow {
@@ -456,7 +459,8 @@ body.is-empty .empty-state {
 @media (hover: none) {
   .filter-toggle:hover,
   .filter-tab:hover,
-  .filter-pill:hover {
+  .filter-pill:hover
+  .filter-clear:hover {
     background-color: inherit;
     color: inherit;
   }
